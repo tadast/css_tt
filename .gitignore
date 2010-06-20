@@ -4,3 +4,4 @@
 rdoc/*
 pkg
 log
+.DS_Store
