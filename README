@@ -1,0 +1,51 @@
+=CssTt
+
+CssTt provides a simple way for creating pure css based tooltips. It was inspired by {Alexander Dawson post}[link:http://sixrevisions.com/css/css-only-tooltips/] and some {Alex Hall improvements}[link:http://www.devseo.co.uk/examples/pure-css-tooltips/], so I just wraped that up to a simple Rails plugin.
+
+==Instalation
+
+  script/plugin install git_repo
+
+Then
+  script/generate css_tt
+which will generate css files and copy icon images to your public dir.
+
+You will also need to add css to any layout header you will use css_tt in.
+  <%= stylesheet_link_tag 'css_tt' %>
+or
+  <%= stylesheet_link_tag 'application', 'your_css_files', 'css_tt', :cache => 'cached_css' %>
+
+==Example
+
+css_tt() helper method returns a html markup which with help of css makes tooltips for given string
+
+Use helper in your views e.g.: 
+  <%= css_tt("I am text to be explained on hover", "I am the text in tooltip") %>
+This will generate a classic popup
+
+Some options are available for tooltips, like :type, :transition and :title
+- :type => possible options are :classic, :critical, :help, :warning, :info type defines the look of the tooltip and if other than classic adds an icon. Types are quite self explainable
+- :transition => works only for webkit based browsers (i.e. Chrome, Safari), but is unobtrusive and does nothing on other browsers, because it's css based
+- :title => tootip title, optional
+
+You can use tooltips for whatever inline html element you want and add any 
+inline elements inside the tooltip.
+  <%= css_tt(link_to(smth, path), 
+          "<b>find</b> more #{link_to('here', path)}", 
+          :type => :info,
+          :title => "Outside link",
+          :transition => :left) %>
+          
+{How do these look like}[link:http://www.devseo.co.uk/examples/pure-css-tooltips/]
+          
+==Future
+
+In the future I expect to add more optional tooltip styles to css_tt
+
+==Collaboration 
+
+If you are a good designer, have some css styles for tooltips and want them in this gem, {contact me}[link:http://github.com/medwezys].
+Keep in mind that the structure of tooltip styles should be simmilar i.e. types - classic, info, warning, critical, help and so on. These are defined using css classes. More info in {Alexander Dawson post}[link:http://sixrevisions.com/css/css-only-tooltips/]
+
+Copyright (c) 2010 Tadas Tamosauskas, Alexander Dawson, Alex Hall. 
+Released under the MIT license

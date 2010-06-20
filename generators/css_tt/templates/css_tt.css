@@ -1,0 +1,79 @@
+.css_tt_hoverable {
+  border-bottom: 1px dotted #000;
+  color: #000;
+  outline: none;
+  cursor: help;
+  text-decoration: none;
+  position: relative;
+}
+.css_tt_hoverable span {
+  position: absolute;
+  top: 2em;
+  left: 1em;
+  width: 250px;
+  margin-left: -99em;
+  opacity: 0;
+
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  -moz-box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+
+  -moz-transition-property: opacity;
+  -moz-transition-duration: 1s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: opacity;
+  -o-transition-duration: 1s;
+}
+.css_tt_hoverable.left span {
+  -moz-transition-property: opacity, margin-left, left;
+  -moz-transition-duration: 1s;
+  -webkit-transition-property: opacity, margin-left, left;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: opacity, margin-left, left;
+  -o-transition-duration: 1s;
+}
+.css_tt_hoverable.top span {
+  top: -99em;
+  margin-left: auto;
+
+  -moz-transition-property: opacity, top;
+  -moz-transition-duration: 1s;
+  -webkit-transition-property: opacity, top;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: opacity, top;
+  -o-transition-duration: 1s;
+}
+.css_tt_hoverable:hover span {
+  font-family: Calibri, Tahoma, Geneva, sans-serif;
+  z-index: 99;
+  margin-left: 0;
+  opacity: 1;
+}
+.css_tt_hoverable.top:hover span {
+  top: 2em;
+  margin-left: auto;
+}
+.css_tt_hoverable img {
+  position: absolute;
+  border: 0;
+  margin: -10px 0 0 -55px;
+  float: left;
+}
+.css_tt_hoverable em {
+  font: 700 1.2em Candara, Tahoma, Geneva, sans-serif;
+  display: block;
+  padding: 0.2em 0 0.6em 0;
+}
+.classic { padding: 0.8em 1em; }
+.custom { padding: 0.5em 0.8em 0.8em 2em; }
+* html a:hover { background: transparent; }
+.classic {background: #FFA; border: 1px solid #FFAD33; }
+.critical { background: #FCA; border: 1px solid #FF3334;  }
+.help { background: #9FDAEE; border: 1px solid #2BB0D7; }
+.info { background: #9FDAEE; border: 1px solid #2BB0D7; }
+.warning { background: #FFA; border: 1px solid #FFAD33; }

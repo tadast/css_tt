@@ -1,0 +1,11 @@
+Usage:
+    script/generate css_tt
+
+  This will create:
+      
+    # static files
+      public/stylesheets/css_tt.css
+      public/images/css_tt/info.png
+      public/images/css_tt/help.png
+      public/images/css_tt/warning.png
+      public/images/css_tt/critical.png

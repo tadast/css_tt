@@ -1,0 +1,6 @@
+**/*/log/*
+**/*/tmp/*
+*.sqlite3
+rdoc/*
+pkg
+log
