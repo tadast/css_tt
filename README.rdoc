@@ -17,6 +17,7 @@ or
 and add
   config.gem "css_tt"
 in your environment.rb file
+
 == Example
 
 css_tt() helper method returns a html markup which with help of css makes tooltips for given string
@@ -26,7 +27,7 @@ Use helper in your views e.g.:
 This will generate a classic popup
 
 Some options are available for tooltips, like :type, :transition and :title
-- :type => possible options are :classic, :critical, :help, :warning, :info type defines the look of the tooltip and if other than classic adds an icon. Types are quite self explainable
+- :type => possible options are :classic, :critical, :help, :warning an :info. Type defines the look of the tooltip and if other than classic adds an icon. Types are quite self explainable
 - :transition => works only for webkit based browsers (i.e. Chrome, Safari), but is unobtrusive and does nothing on other browsers, because it's css based
 - :title => tootip title, optional
 
@@ -43,6 +44,12 @@ How do these look like http://www.devseo.co.uk/examples/pure-css-tooltips/
 == Future
 
 In the future I expect to add more optional tooltip styles to css_tt
+
+== TODO
+
+* Tutorial-like demo page
+* Option to add css file link tag to layout file while generating
+* Add more fancy stuff
 
 == Collaboration 
 
