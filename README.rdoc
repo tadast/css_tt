@@ -1,8 +1,9 @@
 = CssTt
 
 CssTt provides a simple way for creating pure css based tooltips. It was inspired by Alexander Dawson post http://sixrevisions.com/css/css-only-tooltips/ and some Alex Hall improvements http://www.devseo.co.uk/examples/pure-css-tooltips/, so I just wraped that up to a simple Rails plugin.
+Works with Rails v2.3, haven't tested it on Rails 3 yet.
 
-== Instalation
+== Installation
 
   (sudo) gem install css_tt
 
@@ -54,7 +55,7 @@ In the future I expect to add more optional tooltip styles to css_tt
 == Collaboration 
 
 If you are a good designer, have some css styles for tooltips and want them in this gem, pm me http://github.com/medwezys.
-Keep in mind that the structure of tooltip styles should be simmilar i.e. types - classic, info, warning, critical, help and so on. These are defined using css classes. More info in Alexander Dawson post http://sixrevisions.com/css/css-only-tooltips/
+Keep in mind that the structure of tooltip styles should be similar i.e. types - classic, info, warning, critical, help and so on. These are defined using css classes. More info in Alexander Dawson post http://sixrevisions.com/css/css-only-tooltips/
 
 Copyright (c) 2010 Tadas Tamosauskas, Alexander Dawson, Alex Hall. 
 Released under the MIT license
