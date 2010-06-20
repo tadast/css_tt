@@ -29,7 +29,7 @@
   -o-transition-property: opacity;
   -o-transition-duration: 1s;
 }
-.css_tt_hoverable.left span {
+.css_tt_hoverable.css_tt_left span {
   -moz-transition-property: opacity, margin-left, left;
   -moz-transition-duration: 1s;
   -webkit-transition-property: opacity, margin-left, left;
@@ -37,7 +37,7 @@
   -o-transition-property: opacity, margin-left, left;
   -o-transition-duration: 1s;
 }
-.css_tt_hoverable.top span {
+.css_tt_hoverable.css_tt_top span {
   top: -99em;
   margin-left: auto;
 
@@ -54,7 +54,7 @@
   margin-left: 0;
   opacity: 1;
 }
-.css_tt_hoverable.top:hover span {
+.css_tt_hoverable.css_tt_top:hover span {
   top: 2em;
   margin-left: auto;
 }

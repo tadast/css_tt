@@ -1,10 +1,10 @@
-=CssTt
+= CssTt
 
 CssTt provides a simple way for creating pure css based tooltips. It was inspired by {Alexander Dawson post}[link:http://sixrevisions.com/css/css-only-tooltips/] and some {Alex Hall improvements}[link:http://www.devseo.co.uk/examples/pure-css-tooltips/], so I just wraped that up to a simple Rails plugin.
 
-==Instalation
+== Instalation
 
-  script/plugin install git_repo
+  (sudo) gem install css_tt
 
 Then
   script/generate css_tt
@@ -14,8 +14,10 @@ You will also need to add css to any layout header you will use css_tt in.
   <%= stylesheet_link_tag 'css_tt' %>
 or
   <%= stylesheet_link_tag 'application', 'your_css_files', 'css_tt', :cache => 'cached_css' %>
-
-==Example
+and add
+  config.gem "css_tt"
+in your environment.rb file
+== Example
 
 css_tt() helper method returns a html markup which with help of css makes tooltips for given string
 
@@ -38,11 +40,11 @@ inline elements inside the tooltip.
           
 {How do these look like}[link:http://www.devseo.co.uk/examples/pure-css-tooltips/]
           
-==Future
+== Future
 
 In the future I expect to add more optional tooltip styles to css_tt
 
-==Collaboration 
+== Collaboration 
 
 If you are a good designer, have some css styles for tooltips and want them in this gem, {contact me}[link:http://github.com/medwezys].
 Keep in mind that the structure of tooltip styles should be simmilar i.e. types - classic, info, warning, critical, help and so on. These are defined using css classes. More info in {Alexander Dawson post}[link:http://sixrevisions.com/css/css-only-tooltips/]
